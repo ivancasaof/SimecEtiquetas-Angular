@@ -1,0 +1,64 @@
+.card{
+    width: 340px;
+    border: 1px solid #777;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 1em;
+    padding: 1em;
+    text-align: center;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+    font-size: 18px;
+    margin: 1em;
+}
+
+.cabecalho img{
+    width: 80px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #444;
+    font-size: 18px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+}
+.form-group label{
+    text-align: left;
+}
+
+.form-control{
+    border: 1px solid #1D366C;
+    border-radius: 4px;
+    width: 260px;
+    height: 30px;
+    color: #444;
+}
+
+.btn{
+    background-color: #1D366C;
+    border: 1px solid #1D366C;    
+    color: white;
+    padding: .6em 6em;
+    border-radius: 4px;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: transparent;
+    border: 1px solid #1D366C;
+    color: #1D366C;
+}

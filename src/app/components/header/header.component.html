@@ -1,0 +1,23 @@
+<div class="container">
+<nav>
+    <div class="titulo">
+        <img src="./assets/logo.png" alt="Logo">
+        <h2>Simec Etiquetas Web</h2>
+    </div>
+    <ul class="menu">
+        <li id="home"><a [routerLink]="['/']">Home</a></li>
+        <li class="dropdown">
+            <div class="testando">
+                <p>Produtos</p><mat-icon class="arrow">keyboard_arrow_down</mat-icon>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" [routerLink]="['prod-barra']" >Barra</a>
+              <a href="#" [routerLink]="['prod-rolo']">Rolo</a>
+              <a href="#" [routerLink]="['prod-fiomaquina']">Fio Máquina</a>
+              <a href="#" [routerLink]="['prod-endireitado']">Endireitado</a>
+            </div>
+        </li>
+        <li><a href="#" (click)="sair()">Sair</a></li>
+    </ul>
+</nav>
+</div>

@@ -1,0 +1,12 @@
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #1D366C;
+    padding: 3em;
+}
+.conteudo img{
+    width: 250px;
+    padding: 1em;
+}

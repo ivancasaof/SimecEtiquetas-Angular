@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="conteudo">
+        <h3>Histórico de Produção</h3>
+        <div class="container-cards">
+            <div class="card-producao">
+                <h4>Produção Diária:</h4>
+                <p>Total: {{ somaDia }}TN</p>
+            </div>
+            <div class="card-producao">
+                <h4>Produção Mensal:</h4>
+                <p>Total: {{ somaMes }}TN</p>
+            </div>
+        </div>        
+        <table class="tabela" id="tabela" *ngIf="isLoaded; else elseBlock">
+            <thead>
+                <th>Lote</th>
+                <th>Produto</th>
+                <th>OP</th>
+                <th>Corrida</th>
+                <th>Peso</th>                  
+                <th>Data</th>                  
+                <th>Hora</th>                  
+                <th>Usuário</th>                  
+                <th>Protheus</th>                  
+                <th>Data_Envio</th>                  
+                <th>Hora_Envio</th>                                                                  
+            </thead>
+            <tbody>
+                <tr *ngFor="let producao of prodMes">
+                    <td>{{ producao.lote }}</td>
+                    <td>{{ producao.prod_codigo }}</td>
+                    <td>{{ producao.op }}</td>                    
+                    <td>{{ producao.corrida }}</td>
+                    <td>{{ producao.peso }}</td>                                    
+                    <td>{{ producao.data }}</td>
+                    <td>{{ producao.hora }}</td>                                    
+                    <td>{{ producao.usuario }}</td>
+                    <td>{{ producao.envio_protheus }}</td>
+                    <td>{{ producao.envio_data }}</td>
+                    <td>{{ producao.envio_hora }}</td>                    
+                </tr>
+            </tbody>
+        </table>
+        <ng-template #elseBlock>
+            <div class="loading"><mat-progress-spinner mode="indeterminate" [diameter]="diameter" [strokeWidth]="stroke" [color]="color"></mat-progress-spinner></div>
+        </ng-template>        
+        
+    </div>
+</div>

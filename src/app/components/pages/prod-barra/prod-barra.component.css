@@ -1,0 +1,30 @@
+.conteudo{
+    padding: 1em;
+ 
+}
+
+.conteudo h3{
+    border-left: 2px solid #1D366C;
+    padding-left: .5em;
+    font-weight: bold;
+    color: #1D366C;
+}
+
+.tab{
+    text-align: center;
+}
+
+.tablinks{
+    color: #1D366C;
+    font-size: 14px;
+    padding: .2em 1em;
+    border: 1px solid #1D366C;
+    border-radius: 10px;
+    margin-left: 1em;
+    cursor: pointer;
+    transition: .5s;
+}
+.tablinks:hover{
+    color: white;
+    background-color: #1D366C;
+}

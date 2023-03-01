@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="conteudo">
+        <h3>Histórico de Etiquetas Avulsas</h3>
+        <table class="tabela" id="tabela" *ngIf="isLoaded; else elseBlock">
+            <thead>
+                <th>Lote</th>
+                <th>Produto</th>
+                <th>Corrida</th>
+                <th>Peso</th>                  
+                <th>ABNT</th>                  
+                <th>Inmetro</th>                                  
+                <th>Data</th>                  
+                <th>Hora</th>                  
+                <th>Usuário</th>                  
+            </thead>
+            <tbody>
+                <tr *ngFor="let producao of prod">
+                    <td>{{ producao.volume }}</td>
+                    <td>{{ producao.codigo }}</td>
+                    <td>{{ producao.corrida }}</td>                                                        
+                    <td>{{ producao.peso }}</td>                    
+                    <td>{{ producao.abnt }}</td>                    
+                    <td>{{ producao.inmetro }}</td>
+                    <td>{{ producao.data }}</td>
+                    <td>{{ producao.hora }}</td>                    
+                    <td>{{ producao.usuario }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <ng-template #elseBlock>
+            <div class="loading"><mat-progress-spinner mode="indeterminate" [diameter]="diameter" [strokeWidth]="stroke" [color]="color"></mat-progress-spinner></div>
+        </ng-template>        
+        
+    </div>
+</div>

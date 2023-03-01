@@ -1,0 +1,73 @@
+.conteudo{
+    padding: 1em;
+}
+.conteudo h3{
+    color: #444;
+}
+.tabela{
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 400px;
+    height: auto;
+    margin: 10px 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    text-align: center;
+    color: #444;
+}
+.tabela thead th{
+    color: #1D366C;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #1d366c;
+}
+.tabela tbody tr{
+    border-bottom: 1px solid #dfdfdf;
+    cursor: pointer;
+}
+
+.tabela tbody tr:nth-of-type(even){
+    background-color: rgb(236, 236, 236);
+}
+.tabela tbody tr:last-of-type {
+    border-bottom: 1px solid #1D366C;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-producao{
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    padding: 1em;
+    border-left: 1px solid #1D366C;
+    border-radius: 3px;
+    box-shadow: 5px 5px 2px 1px rgba(70, 70, 70, 0.2);
+    margin: 10px 10px;
+}
+.card-producao h4{
+    color:#1D366C;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.card-producao p{
+    color:#444;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+
+
+

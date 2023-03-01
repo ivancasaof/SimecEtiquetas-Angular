@@ -1,0 +1,60 @@
+.conteudo{
+    padding: 1em;
+}
+.conteudo h3{
+    border-left: 2px solid #1D366C;
+    color: #1D366C;
+    padding-left: .5em;
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: .5em;
+    margin-top: .5em;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #bebebe;    
+    border-radius: 10px;
+    margin: .5em 2em;    
+}
+.card p{
+    font-weight: 500;
+    color: #444;
+}
+.card a{
+    background-color: #1D366C;
+    padding: 1em 4em;
+    font-size: 14px;
+    border: 1px solid #1D366C;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.card a:hover{
+    background-color: transparent;
+    color: #1D366C;
+}
+
+.card p span{
+    font-weight: 500;
+    color: #27A243;
+}
+
+.status{
+    font-size: 18px;
+    text-align: center;
+    color: #1D366C;
+}
